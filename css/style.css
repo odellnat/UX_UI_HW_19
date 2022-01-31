@@ -1,0 +1,213 @@
+body {
+   
+    font-family: "Cairo", sans-serif;
+    font-size: 12pt;
+    font-weight: 50;
+}
+
+
+.navGrid {
+  display: grid;
+  grid-template-columns: 31% 69%;
+  grid-template-areas: 
+      "firstName logoImage"
+      "lastName topNav";
+}
+
+.firstName {
+    grid-area: firstName;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-size: 46px;
+    height: 100px;
+    }
+
+.firstName p {
+    margin-bottom: 0;
+    }
+
+.lastName {
+    grid-area: lastName;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-size: 60px;
+    height: 100px;
+    }
+
+.lastName p {
+    margin-top: 0;
+    }
+
+.logoImage {
+    grid-area: logoImage;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 10px;
+     
+}
+
+.topNav {
+    grid-area: topNav;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Quicksand", sans-serif;
+    font-size: 26px;
+    height: 100px;
+    border-top: .5px solid black;
+}
+
+.topNav p {
+    margin-bottom: 0;
+    }
+
+.heroContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  background-color: #424464;
+  border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    max-height: 350.6px;
+}
+
+.heroContainer .fb1 {
+    display: flex;
+    flex: 33%;
+       }
+
+.heroContainer > .fb1 > .heroImage {
+    margin: 0 auto;
+  }
+
+.heroContainer .fb2 {
+    display: flex;
+    flex: 67%;
+    padding-left: 5em;
+    padding-right: 3em;
+    padding-bottom: 3em;
+    padding-top: 3em;
+                }
+
+
+.heroContainer p {
+    display: flex;
+    color: aliceblue;
+    font-family: "Cairo", sans-serif;
+    font-weight: 100;
+    line-height: 3;
+        }
+
+
+
+h1 {
+    font-family: "Quicksand", sans-serif;
+    margin-left: 30px;
+    font-size: 42pt;
+    font-weight: 100;
+    border-bottom: 1px solid black;
+    border-width: 50%;
+    
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    }
+
+.flexContainer2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    }
+
+.flexContainer > div {
+    width: 25%;
+    color: aliceblue;
+    margin: auto;
+    float: left;
+    padding: 20px;
+    text-align: center;
+    font-weight: 100;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+      }
+
+.flexContainer2 > div {
+    width: 17%;
+    margin: auto;
+    float: left;
+    padding: 20px;
+    text-align: center;
+    font-weight: 100;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+     }
+
+
+.ms1 {
+     background-color: #424464;
+}
+.ms2 {
+    background-color: #686983;
+}
+.ms3 {
+    background-color: #8E8FA2;
+}
+
+.mw1 {
+    color: aliceblue;
+    background-color: #424464;
+}
+.mw2 {
+    color: aliceblue;
+    background-color: #686983;
+}
+.mw3 {
+    color: aliceblue;
+    background-color: #8E8FA2;
+}
+
+.mw4 {
+    color: aliceblue;
+    background-color: #B3B4C1;
+    
+}
+
+.imgChild {
+    padding: 10px;
+    justify-items: center;
+      
+}
+
+h3 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 28pt;
+    font-weight: 100;
+    margin: 5px;
+    text-align: center;
+    }
+
+.viewAll {
+    margin-top: 1em;
+}
+
+@media only screen and (max-width: 600px) {
+    .flexContainer {
+        flex-direction: column;
+            }
+    .flexContainer2 {
+        flex-direction: column;
+    }
+    .flexContainer > div {
+        margin: 10px;
+        width: 100%;
+    }
+     .flexContainer2 > div {
+        margin: 10px;
+        width: 100%;
+    }
+}
