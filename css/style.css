@@ -43,7 +43,16 @@ body {
     text-align: center;
     margin-top: 60px;
     margin-bottom: 10px;
-     
+   }
+
+.toggleImage {
+    -moz-transition: transform 1s;
+    -webkit-transition: transform 1s;
+    transition: transform 1s;
+}
+
+.flip {
+ transform: rotate(-90deg);
 }
 
 .topNav {
