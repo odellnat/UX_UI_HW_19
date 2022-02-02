@@ -3,7 +3,7 @@
 
 $(document).ready(function(){
     $(".toggleImage").click(function(){
-      $("img").toggleClass("flip");
+      $("#logoImagex").toggleClass("flip");
     });
   });
 
