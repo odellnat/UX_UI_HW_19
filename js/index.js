@@ -1,8 +1,11 @@
-	$(".toggleImage").click( function() {
-        $(".toggleImage").css({'transform': 'rotate(-90deg)'});
+
+/*global $ */
+
+$(document).ready(function(){
+    $(".toggleImage").click(function(){
+      $("img").toggleClass("flip");
     });
-
-
+  });
 
 
 
@@ -10,6 +13,30 @@
 
 
 /*
+
+$(document).ready(function(){
+    $(".toggleImage").click(function(){
+      $("img").toggleClass("flip");
+    });
+  });
+
+$( "#toggleImage" ).click(function() {
+    $( this ).toggleClass( "flip" );
+  });
+
+
+
+
+
+
+
+
+    $(".toggleImage").click( function() {
+        $(".toggleImage").css({'transform': 'rotate(-90deg)'});
+        $(".toggleImage").toggleClass()
+    });
+
+
 var rotation = 0;
 
 $(".logoImage").click( function(degrees) {
